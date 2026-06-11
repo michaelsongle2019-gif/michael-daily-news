@@ -1,312 +1,230 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
-  <meta name="daily-briefing-version" content="20260611-1806">
-  <title>Michael Daily News | 2026-06-11 Afternoon Edition</title>
-  <style>
-    :root {
-      --bg: #eef3f7;
-      --card: #f8fbfd;
-      --line: #c8d6e4;
-      --ink: #15273a;
-      --muted: #5e748a;
-      --accent: #2e78b7;
-      --soft: #e5eef6;
-      --insight: #eaf3fb;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
-      background: linear-gradient(180deg, #dfe9f1 0%, #eef3f7 100%);
-      color: var(--ink);
-    }
-    .shell {
-      max-width: 1120px;
-      margin: 0 auto;
-      padding: 28px 16px 48px;
-    }
-    .hero {
-      background: linear-gradient(135deg, #163554 0%, #204d77 100%);
-      color: #fff;
-      border: 1px solid #355b80;
-      border-radius: 18px;
-      padding: 28px;
-      box-shadow: 0 18px 40px rgba(21, 39, 58, 0.12);
-    }
-    .hero-top {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      align-items: flex-start;
-      flex-wrap: wrap;
-    }
-    .hero h1 {
-      margin: 0;
-      font-size: 34px;
-      letter-spacing: 1px;
-    }
-    .hero p {
-      margin: 8px 0 0 0;
-      color: #b7d0e5;
-      line-height: 1.8;
-      max-width: 760px;
-    }
-    .build {
-      text-align: right;
-      font-size: 13px;
-      line-height: 1.8;
-      color: #b7d0e5;
-    }
-    .layout {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
-      margin-top: 20px;
-    }
-    .section {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 18px;
-      box-shadow: 0 10px 28px rgba(21, 39, 58, 0.08);
-    }
-    .section-header h2 {
-      margin: 0;
-      font-size: 22px;
-      color: #123a5d;
-    }
-    .section-header p {
-      margin: 8px 0 0 0;
-      font-size: 13px;
-      line-height: 1.8;
-      color: var(--muted);
-    }
-    .news-list {
-      display: grid;
-      gap: 14px;
-      margin-top: 16px;
-    }
-    .news-item {
-      border-top: 1px solid #e3ebf2;
-      padding-top: 14px;
-    }
-    .news-item:first-child {
-      border-top: none;
-      padding-top: 0;
-    }
-    .item-top {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 8px;
-    }
-    .item-number {
-      font-size: 17px;
-      font-weight: 900;
-      color: var(--accent);
-    }
-    .item-tag {
-      display: inline-block;
-      padding: 3px 8px;
-      border-radius: 999px;
-      background: var(--soft);
-      color: #4d5c70;
-      font-size: 11px;
-      font-weight: 700;
-    }
-    .news-item h3 {
-      margin: 0 0 8px 0;
-      font-size: 18px;
-      line-height: 1.5;
-    }
-    .summary, .meta {
-      margin: 0 0 8px 0;
-      font-size: 13px;
-      line-height: 1.85;
-      color: var(--muted);
-    }
-    .meta {
-      font-weight: 700;
-      color: #7f93a7;
-    }
-    .source-link {
-      color: var(--accent);
-      text-decoration: none;
-      font-size: 13px;
-      font-weight: 700;
-    }
-    .insight {
-      margin-top: 10px;
-      border-left: 4px solid var(--accent);
-      background: var(--insight);
-      padding: 10px 12px;
-      font-size: 13px;
-      line-height: 1.8;
-      color: #36526d;
-    }
-    .footer {
-      margin-top: 18px;
-      text-align: center;
-      color: #6b8095;
-      font-size: 12px;
-    }
-    @media (max-width: 980px) {
-      .layout { grid-template-columns: 1fr; }
-      .hero h1 { font-size: 28px; }
-      .build { text-align: left; }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta name="daily-briefing-version" content="20260611-corrected-1915">
+<title>Michael的每日新闻 · AI 科技 全球</title>
+<meta name="description" content="Michael的每日新闻：AI要闻、科技要闻、全球要闻，每日更新。">
+<meta property="og:title" content="Michael的每日新闻">
+<meta property="og:description" content="AI要闻 | 科技要闻 | 全球要闻">
+<meta property="og:image" content="https://michaelsongle2019-gif.github.io/michael-daily-news/og-cover.jpg?v=20260611-corrected-1915">
+<style>:root{--card:#f5f8fb}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Microsoft YaHei','PingFang SC',Arial,sans-serif;background:#e8eff5;color:#1a2a3a;line-height:1.7}.container{max-width:700px;margin:0 auto;padding:20px 0}.card{background:var(--card);border:2px solid #b8c8d8;border-radius:12px;overflow:hidden}.header{background:linear-gradient(135deg,#1a3a5c,#0e2a48);padding:28px 28px 0;color:#fff}.header-top{display:flex;justify-content:space-between;gap:18px;align-items:flex-start;margin-bottom:6px}.title{font-size:26px;font-weight:900;letter-spacing:3px;white-space:nowrap}.subtitle{font-size:11px;letter-spacing:3px;color:#8bb8d8;margin-bottom:18px}.date{font-size:13px;color:#8bb8d8;text-align:right}.tabs{display:flex;margin-top:8px}.tab{flex:1;text-align:center;padding:10px 0;font-size:14px;font-weight:700;color:#8bb8d8;border-bottom:3px solid transparent}.tab.active{color:#fff;border-bottom-color:#4a9ece;background:rgba(74,158,206,.12)}.content{padding:20px 28px}.tab-content{display:none}.tab-content.active{display:block}.stats-bar{display:flex;gap:12px;margin-bottom:18px;flex-wrap:wrap}.stat-item{background:#e8f0f8;border:1px solid #c0d4e4;border-radius:8px;padding:8px 14px;font-size:12px;flex:1;min-width:120px;text-align:center}.stat-label{color:#5a7a9a}.stat-value{color:#1a3a5c;font-weight:700;font-size:16px;display:block;margin-top:2px}.news-item{margin-bottom:20px;padding-bottom:18px;border-bottom:1px solid #d4e0ec}.item-header{display:flex;align-items:flex-start;gap:10px;margin-bottom:6px}.item-number{color:#4a9ece;font-weight:900;font-size:18px;min-width:28px;line-height:1.4}.item-title-wrap{flex:1}.tag{display:inline-block;font-size:11px;font-weight:600;padding:1px 8px;border-radius:4px;margin-right:6px;vertical-align:middle;background:#e8e4f0;color:#554a84}.item-title{font-size:15px;font-weight:700;color:#1a2a3a;line-height:1.5;display:inline;vertical-align:middle}.item-summary{font-size:13px;color:#3a5a7a;margin:6px 0 6px 38px;line-height:1.8}.item-link{display:inline-block;margin:4px 0 6px 38px;font-size:11px;color:#2a7ab8;text-decoration:none}.item-meta{font-size:11px;color:#8a9aaa;margin:0 0 6px 38px}.heat{margin-left:8px;color:#d48a3a;font-weight:600}.insight{background:#e8f0f8;border-left:3px solid #4a9ece;border-radius:0 6px 6px 0;padding:10px 14px;margin:8px 0 0 38px;font-size:12px;color:#3a5a7a;line-height:1.8}.insight b{color:#1a3a5c}.toggle-bar{background:#dce8f0;padding:10px;text-align:center;color:#2a7ab8;font-weight:700;letter-spacing:1px;margin-top:16px;font-size:13px}.collapsible-content{display:none;margin-top:8px}.collapsible-content.open{display:block}.item-compact{padding:7px 0;border-bottom:1px solid #ece8e0;font-size:13px;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}.item-compact .item-num{color:#4a9ece;font-weight:900;font-size:14px;min-width:28px}.item-compact .item-title{font-size:13px;font-weight:500;color:#4a5a6a}.footer{text-align:center;padding:16px 28px;font-size:12px;color:#8a9aaa;border-top:1px solid #d4e0ec}@media(max-width:520px){.container{padding:0}.card{border-radius:0;border-left:none;border-right:none}.header{padding:22px 16px 0}.header-top{flex-direction:column}.title{font-size:22px}.date{text-align:left}.content{padding:16px}.item-summary,.item-link,.item-meta,.insight{margin-left:0}.stats-bar{display:none}.tab{font-size:12px}}</style>
 </head>
-<body>
-  <div class="shell">
-    <section class="hero">
-      <div class="hero-top">
-        <div>
-          <h1>Michael Daily News</h1>
-          <p>Afternoon edition covering AI, non-AI technology, and major global developments. Website and email share the same verified source set for this run.</p>
-        </div>
-        <div class="build">
-          <div>2026.6.11 | Thursday | South Africa time 18:06</div>
-          <div>BUILD_VERSION: 20260611-1806</div>
-        </div>
-      </div>
-    </section>
-    <main class="layout">
-      
-      <section class="section" id="section-ai">
-        <div class="section-header">
-          <h2>AI News</h2>
-          <p>This afternoon's AI update is led by deployment, platform control, and regulation risk rather than pure model benchmarks.</p>
-        </div>
-        <div class="news-list">
-          
-            <article class="news-item">
-              <div class="item-top">
-                <span class="item-number">01</span>
-                <span class="item-tag">Deployment</span>
-              </div>
-              <h3>Anthropic launches $150 million Claude Corps program for nonprofits</h3>
-              <p class="summary">The Associated Press reported on June 11 that Anthropic will fund and place 1,000 fellows into more than 400 nonprofits, pairing grants and Claude credits with hands-on adoption support.</p>
-              <p class="meta">AP | 2026-06-11</p>
-              <a class="source-link" href="https://apnews.com/article/b1c130a08417d13e1256f8982d233b0e" target="_blank" rel="noopener">Source link</a>
-              <div class="insight">The important signal is that frontier AI firms are now spending real capital to accelerate real-world workflow adoption. That shifts the market from model demos toward distribution, services, and measured impact.</div>
-            </article>
-            <article class="news-item">
-              <div class="item-top">
-                <span class="item-number">02</span>
-                <span class="item-tag">Regulation</span>
-              </div>
-              <h3>Apple and Brussels clash over the EU rollout delay for Siri AI</h3>
-              <p class="summary">AP reported on June 9 that Apple blamed the EU Digital Markets Act for delaying Siri AI in Europe, while the European Commission said the choice not to launch was Apple's alone.</p>
-              <p class="meta">AP | 2026-06-09</p>
-              <a class="source-link" href="https://apnews.com/article/5d18df90b03e4e98ac528c8802e2b531" target="_blank" rel="noopener">Source link</a>
-              <div class="insight">AI assistants are now running into platform-access regulation. The next competitive moat is not only model quality, but whether a company can ship the assistant across regulated device ecosystems on time.</div>
-            </article>
-            <article class="news-item">
-              <div class="item-top">
-                <span class="item-number">03</span>
-                <span class="item-tag">Platform</span>
-              </div>
-              <h3>Apple uses WWDC 2026 to reposition Siri AI as a system-level assistant</h3>
-              <p class="summary">AP reported on June 5 that Apple upgraded Siri AI with cross-app actions, visual intelligence, and private-cloud processing in an effort to close the gap with rival AI platforms.</p>
-              <p class="meta">AP | 2026-06-05</p>
-              <a class="source-link" href="https://apnews.com/article/aa25d07c06d366ec5b62643a1f5b0db9" target="_blank" rel="noopener">Source link</a>
-              <div class="insight">This matters because default device entry points still decide mainstream usage. If Apple can make AI useful inside the operating system rather than in a standalone chat app, retention economics improve sharply.</div>
-            </article>
-        </div>
-      </section>
-      <section class="section" id="section-tech">
-        <div class="section-header">
-          <h2>Non-AI Tech</h2>
-          <p>Outside AI, the strongest signals remain in space infrastructure, semiconductor supply-chain optionality, and European aerospace realignment.</p>
-        </div>
-        <div class="news-list">
-          
-            <article class="news-item">
-              <div class="item-top">
-                <span class="item-number">01</span>
-                <span class="item-tag">Space</span>
-              </div>
-              <h3>NASA names the Artemis III crew for the 2027 orbital test mission</h3>
-              <p class="summary">AP reported on June 9 that NASA unveiled the Artemis III crew for a mission now centered on Earth-orbit docking tests with lunar landers, a key step toward later moon-surface operations.</p>
-              <p class="meta">AP | 2026-06-09</p>
-              <a class="source-link" href="https://apnews.com/article/7c09de3e1fd5b1f7fbfc9e9d702d71a5" target="_blank" rel="noopener">Source link</a>
-              <div class="insight">The bottleneck is no longer launch rhetoric. It is multi-system integration across Orion, landers, suits, and docking workflows, which is where schedule credibility for the moon program will be judged.</div>
-            </article>
-            <article class="news-item">
-              <div class="item-top">
-                <span class="item-number">02</span>
-                <span class="item-tag">Chips</span>
-              </div>
-              <h3>Google and Nvidia are reported to be weighing Intel as an advanced chip supplier</h3>
-              <p class="summary">MarketWatch, citing The Information on June 9, reported that Google and Nvidia are considering Intel for more high-end manufacturing and packaging work, boosting confidence in Intel Foundry.</p>
-              <p class="meta">MarketWatch / The Information | 2026-06-09</p>
-              <a class="source-link" href="https://www.marketwatch.com/story/intels-stock-soars-as-the-companys-blue-chip-roster-of-customers-looks-to-be-growing-264cd9d2" target="_blank" rel="noopener">Source link</a>
-              <div class="insight">Even tentative customer diversification away from a single foundry matters. It suggests large buyers are paying for second-source resilience, not only lowest-cost wafers.</div>
-            </article>
-            <article class="news-item">
-              <div class="item-top">
-                <span class="item-number">03</span>
-                <span class="item-tag">Aerospace</span>
-              </div>
-              <h3>Germany signals it wants to lead a new next-generation fighter effort after FCAS</h3>
-              <p class="summary">The Financial Times reported on June 10 that Berlin will seek a leading role in any future sixth-generation fighter project after stepping back from the FCAS path with France.</p>
-              <p class="meta">Financial Times | 2026-06-10</p>
-              <a class="source-link" href="https://www.ft.com/content/9d565c4a-e5e1-4907-a3c7-1eb202046479" target="_blank" rel="noopener">Source link</a>
-              <div class="insight">This is bigger than one defense contract. It shows Europe is still struggling to align industrial control with strategic autonomy in complex aerospace programs.</div>
-            </article>
-        </div>
-      </section>
-      <section class="section" id="section-world">
-        <div class="section-header">
-          <h2>Global News</h2>
-          <p>The highest-risk global stories this afternoon remain Gulf escalation, U.S. immigration hardening, and European efforts to shore up Ukraine's air defenses.</p>
-        </div>
-        <div class="news-list">
-          
-            <article class="news-item">
-              <div class="item-top">
-                <span class="item-number">01</span>
-                <span class="item-tag">Middle East</span>
-              </div>
-              <h3>The U.S. and Iran exchange fire again as Gulf tensions worsen</h3>
-              <p class="summary">AP's June 11 live coverage said the U.S. struck targets in Iran again while Tehran retaliated against Gulf states, raising the risk of further energy and shipping disruption.</p>
-              <p class="meta">AP | 2026-06-11</p>
-              <a class="source-link" href="https://apnews.com/article/2656530d342f730821fc63e67a342891" target="_blank" rel="noopener">Source link</a>
-              <div class="insight">The market issue is not only oil price direction. It is the probability that shipping, airspace, and insurance costs remain structurally elevated as long as escalation cycles continue.</div>
-            </article>
-            <article class="news-item">
-              <div class="item-top">
-                <span class="item-number">02</span>
-                <span class="item-tag">United States</span>
-              </div>
-              <h3>Trump signs a nearly $70 billion immigration enforcement bill</h3>
-              <p class="summary">AP reported on June 11 that President Donald Trump signed legislation funding immigration enforcement through the end of his term, including major increases for ICE and Border Patrol.</p>
-              <p class="meta">AP | 2026-06-11</p>
-              <a class="source-link" href="https://apnews.com/article/9eef2e24fede3e4d593be462cbcf31f2" target="_blank" rel="noopener">Source link</a>
-              <div class="insight">This materially expands federal enforcement capacity, which matters for employers, universities, cross-border mobility planning, and political risk heading into the midterms.</div>
-            </article>
-            <article class="news-item">
-              <div class="item-top">
-                <span class="item-number">03</span>
-                <span class="item-tag">Ukraine</span>
-              </div>
-              <h3>European leaders press for faster air-defense production for Ukraine</h3>
-              <p class="summary">AP reported on June 7 that leaders from the U.K., France, Germany, and Ukraine called for urgent interceptor and anti-ballistic missile production to counter Russia's intensified attacks.</p>
-              <p class="meta">AP | 2026-06-07</p>
-              <a class="source-link" href="https://apnews.com/article/ce1713304c7578f039fcbdb8d655f6d7" target="_blank" rel="noopener">Source link</a>
-              <div class="insight">Ukraine's battlefield problem is increasingly an industrial tempo problem. The pace of interceptor production now directly affects the survivability of cities and critical infrastructure.</div>
-            </article>
-        </div>
-      </section>
-    </main>
-    <div class="footer">All items include source links | Afternoon edition build 20260611-1806</div>
-  </div>
-</body>
-</html>
+<body><div class="container"><div class="card">
+<div class="header"><div class="header-top"><div><div class="title">Michael的每日新闻</div><div class="subtitle">DAILY BRIEFING · TOP STORIES</div></div><div class="date" id="brief-date">2026.6.11 · 星期四 / 南非时间 19:15 重新整理</div></div><div class="tabs"><div class="tab active" data-tab="ai">AI 要闻</div><div class="tab " data-tab="tech">科技要闻</div><div class="tab " data-tab="global">全球要闻</div></div></div>
+<div class="content"><!-- AUTO-UPDATE:START --><div class="tab-content active" id="tab-ai"><div class="stats-bar"><div class="stat-item"><span class="stat-label">平台入口</span><span class="stat-value">4</span></div><div class="stat-item"><span class="stat-label">监管/安全</span><span class="stat-value">3</span></div><div class="stat-item"><span class="stat-label">企业落地</span><span class="stat-value">2</span></div><div class="stat-item"><span class="stat-label">资本/生态</span><span class="stat-value">1</span></div></div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">01</span><div class="item-title-wrap"><span class="tag tag-平台">平台</span><span class="item-title">Apple 推出升级版 Siri AI，试图把系统入口重新夺回自己手里</span></div></div>
+<div class="item-summary">AP 报道，Apple 在 WWDC 2026 推出升级版 Siri，强化视觉理解、跨应用执行、照片与系统级写作能力，并强调端侧处理和私有云计算。新 Siri 不是单个聊天机器人，而是 Apple 把 AI 嵌回 iPhone、Mac、Camera、Photos、Safari 等入口的系统级尝试。</div>
+<a class="item-link" href="https://apnews.com/article/aa25d07c06d366ec5b62643a1f5b0db9" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">AP</span><span class="heat">热度 极高</span></div>
+<div class="insight"><b>格局：</b>Apple 的 AI 策略不是模型参数竞赛，而是入口保卫战。<b>影响：</b>如果 Siri AI 能稳定落地，免费聊天机器人会被系统级能力挤压；如果体验继续延迟，OpenAI、Google 和 Anthropic 仍会吞掉用户心智。</div>
+</div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">02</span><div class="item-title-wrap"><span class="tag tag-监管">监管</span><span class="item-title">Apple 与欧盟互相指责，Siri AI 在欧洲上线继续延迟</span></div></div>
+<div class="item-summary">AP 报道，Apple 和欧盟围绕 Siri AI 在欧洲市场的延迟互相指责。Apple 把问题指向数字市场和隐私监管要求，欧盟则认为平台公司不应把合规责任转嫁给监管本身。</div>
+<a class="item-link" href="https://apnews.com/article/siri-ai-europe-apple-5d18df90b03e4e98ac528c8802e2b531" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">AP</span><span class="heat">热度 高</span></div>
+<div class="insight"><b>趋势：</b>AI 产品全球同步发布越来越难。<b>影响：</b>面向欧洲、中国等监管复杂市场，模型、数据流、端侧能力和云推理都会被拆成不同版本，产品团队要承受更高适配成本。</div>
+</div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">03</span><div class="item-title-wrap"><span class="tag tag-产品">产品</span><span class="item-title">Reuters 梳理 Siri AI：个人上下文、屏幕理解和跨应用任务成为核心卖点</span></div></div>
+<div class="item-summary">Reuters 对 Apple WWDC 2026 重点功能的梳理显示，新 Siri 能理解个人上下文、分析屏幕内容、搜索网页、理解图片并跨应用完成任务；这标志 Apple 把 AI 的价值点放在操作系统层面的任务闭环。</div>
+<a class="item-link" href="https://www.investing.com/news/stock-market-news/factboxfrom-siri-ai-to-child-safety-tools-key-takeaways-from-apples-wwdc-4731367" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">Reuters / Investing.com</span><span class="heat">热度 高</span></div>
+<div class="insight"><b>格局：</b>AI 助手竞争从“谁回答更好”转向“谁能操作更多本地上下文”。<b>影响：</b>权限、隐私、设备生态和应用接口会成为真正壁垒。</div>
+</div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">04</span><div class="item-title-wrap"><span class="tag tag-资本">资本</span><span class="item-title">Apple Siri AI 发布后股价回落，市场质疑商业化节奏</span></div></div>
+<div class="item-summary">Investing.com 分析称，Apple 在 Siri AI 发布后股价短暂冲高后回落，市场关注点转向 Apple Intelligence 的变现路径、iCloud+ 捆绑能力和实际上线时间表。</div>
+<a class="item-link" href="https://www.investing.com/analysis/apple-intelligence-monetization-is-the-real-wwdc-story-200681775" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">Investing.com</span><span class="heat">热度 中高</span></div>
+<div class="insight"><b>趋势：</b>AI 发布会已经不能只讲功能，要回答收入、成本和留存。<b>影响：</b>硬件公司会把 AI 与订阅、存储、云服务和生态锁定更紧密绑定。</div>
+</div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">05</span><div class="item-title-wrap"><span class="tag tag-竞争">竞争</span><span class="item-title">Apple 新 Siri 被视为对免费 AI 聊天机器人的系统级反击</span></div></div>
+<div class="item-summary">Business Insider 分析认为，Apple 正把新 Siri 变成免费 AI 聊天机器人的替代品，借助信息、照片、邮件和本机应用的上下文优势，避免用户被外部 AI 应用持续分流。</div>
+<a class="item-link" href="https://www.businessinsider.com/apple-siri-ai-chatgpt-openai-nilay-patel-interview-kafka-2026-6" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">Business Insider</span><span class="heat">热度 高</span></div>
+<div class="insight"><b>格局：</b>AI 平台战争正在从网页和 App 回到操作系统。<b>影响：</b>OpenAI 与 Apple 从合作走向潜在竞争，未来入口分成和默认助手位置会更敏感。</div>
+</div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">06</span><div class="item-title-wrap"><span class="tag tag-行业">行业</span><span class="item-title">Thomson Reuters 报告称专业服务业 AI 采用继续深化</span></div></div>
+<div class="item-summary">Thomson Reuters Institute 发布 2026 AI in Professional Services Report，覆盖法律、税务、会计、风险、欺诈和政府部门，强调 AI 正从试点工具转向专业工作流重塑。</div>
+<a class="item-link" href="https://www.thomsonreuters.com/en/reports/2026-ai-in-professional-services-report" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">Thomson Reuters</span><span class="heat">热度 中高</span></div>
+<div class="insight"><b>趋势：</b>专业服务的 AI 价值不在生成一段文字，而在重排检索、审核、合规和交付流程。<b>影响：</b>律所、咨询、审计和政府部门会更重视可信来源、审计链和责任边界。</div>
+</div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">07</span><div class="item-title-wrap"><span class="tag tag-治理">治理</span><span class="item-title">企业 AI 议程转向代理、治理和可规模化落地</span></div></div>
+<div class="item-summary">Reuters Events Momentum AI London 2026 议程显示，企业关注点集中在 Agentic AI、治理原则、实时数据质量、支付安全和大规模落地失败点上，说明 AI 讨论已从概念热转向运营约束。</div>
+<a class="item-link" href="https://events.reutersevents.com/momentum/london/agenda" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">Reuters Events</span><span class="heat">热度 中</span></div>
+<div class="insight"><b>格局：</b>企业不再只问能不能部署 AI，而是问如何在生产条件下稳定运行。<b>影响：</b>数据债、权限、支付认证、监控和可靠性会成为企业采购核心。</div>
+</div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">08</span><div class="item-title-wrap"><span class="tag tag-支付">支付</span><span class="item-title">Mastercard 把 Agent Pay 推到代理商务安全议题前台</span></div></div>
+<div class="item-summary">Reuters Events 议程中，Mastercard 产品负责人将讨论 Agent Pay，重点是 AI 代理自主购物、交易和做金融决策时如何建立信任、认证与同意机制。</div>
+<a class="item-link" href="https://events.reutersevents.com/momentum/london/agenda" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">Reuters Events</span><span class="heat">热度 中</span></div>
+<div class="insight"><b>趋势：</b>AI 代理一旦能付款，风险就从信息错误升级为真实资金损失。<b>影响：</b>支付网络、银行和平台会围绕授权、撤销、限额和可追溯性重建规则。</div>
+</div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">09</span><div class="item-title-wrap"><span class="tag tag-实体AI">实体AI</span><span class="item-title">SAE 论文强调实体 AI 落地需要安全、信任和全生命周期治理</span></div></div>
+<div class="item-summary">一篇 2026 年 SAE World Congress 相关论文总结，自动驾驶、移动机器人和工业机器中的实体 AI 正进入真实场景，但安全、信任、治理和运行可靠性仍是核心挑战。</div>
+<a class="item-link" href="https://arxiv.org/abs/2605.10653" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">arXiv / SAE</span><span class="heat">热度 中</span></div>
+<div class="insight"><b>格局：</b>下一阶段 AI 不只在屏幕里回答问题，而会进入车辆、工厂和机器系统。<b>影响：</b>事故责任、测试标准和人机协作设计会成为实体 AI 商业化前提。</div>
+</div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">10</span><div class="item-title-wrap"><span class="tag tag-媒体">媒体</span><span class="item-title">Reuters Institute 继续把 AI 与新闻未来列为核心议题</span></div></div>
+<div class="item-summary">Reuters Institute 的 AI and the Future of News 2026 会议聚焦 AI 报道、调查、事实核查和新闻业影响，显示媒体行业对 AI 的关注正从工具使用扩展到信任基础设施。</div>
+<a class="item-link" href="https://reutersinstitute.politics.ox.ac.uk/calendar/ai-and-future-news-2026-0" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">Reuters Institute</span><span class="heat">热度 中</span></div>
+<div class="insight"><b>趋势：</b>新闻机构既要使用 AI，也要解释 AI。<b>影响：</b>事实核查、来源标注、内容溯源和编辑责任会成为媒体竞争力的一部分。</div>
+</div><div class="toggle-bar" onclick="toggleSection(this)">展开 TOP11-20 AI 要闻 速览</div><div class="collapsible-content"><div class="item-compact"><span class="item-num">11</span><span class="tag tag-产品">产品</span><span class="item-title">Apple 新 Siri 将以独立对话应用承接更多 AI 交互</span> <a class="item-link" href="https://timesofindia.indiatimes.com/technology/tech-news/7-key-things-to-know-about-siri-ai-that-apple-announced-at-wwdc-2026/photostory/131662381.cms" target="_blank" rel="noopener">阅读来源 →</a></div><div class="item-compact"><span class="item-num">12</span><span class="tag tag-隐私">隐私</span><span class="item-title">Apple 继续把端侧处理和私有云计算作为 AI 差异化叙事</span> <a class="item-link" href="https://apnews.com/article/aa25d07c06d366ec5b62643a1f5b0db9" target="_blank" rel="noopener">阅读来源 →</a></div><div class="item-compact"><span class="item-num">13</span><span class="tag tag-生态">生态</span><span class="item-title">Apple 与 Google Gemini 合作强化 Siri 推理能力</span> <a class="item-link" href="https://timesofindia.indiatimes.com/technology/tech-news/7-key-things-to-know-about-siri-ai-that-apple-announced-at-wwdc-2026/photostory/131662381.cms" target="_blank" rel="noopener">阅读来源 →</a></div><div class="item-compact"><span class="item-num">14</span><span class="tag tag-监管">监管</span><span class="item-title">欧洲延迟显示全球 AI 发布会越来越受本地规则影响</span> <a class="item-link" href="https://apnews.com/article/siri-ai-europe-apple-5d18df90b03e4e98ac528c8802e2b531" target="_blank" rel="noopener">阅读来源 →</a></div><div class="item-compact"><span class="item-num">15</span><span class="tag tag-行业">行业</span><span class="item-title">专业服务报告显示法律和税务 AI 进入流程重构阶段</span> <a class="item-link" href="https://www.thomsonreuters.com/en/reports/2026-ai-in-professional-services-report" target="_blank" rel="noopener">阅读来源 →</a></div><div class="item-compact"><span class="item-num">16</span><span class="tag tag-代理">代理</span><span class="item-title">企业会议议程把 Agentic AI 可靠性列为规模化重点</span> <a class="item-link" href="https://events.reutersevents.com/momentum/london/agenda" target="_blank" rel="noopener">阅读来源 →</a></div><div class="item-compact"><span class="item-num">17</span><span class="tag tag-支付">支付</span><span class="item-title">Agent Pay 让 AI 商务进入金融风控主线</span> <a class="item-link" href="https://events.reutersevents.com/momentum/london/agenda" target="_blank" rel="noopener">阅读来源 →</a></div><div class="item-compact"><span class="item-num">18</span><span class="tag tag-实体AI">实体AI</span><span class="item-title">自动驾驶与机器人部署需要工程化安全框架</span> <a class="item-link" href="https://arxiv.org/abs/2605.10653" target="_blank" rel="noopener">阅读来源 →</a></div><div class="item-compact"><span class="item-num">19</span><span class="tag tag-媒体">媒体</span><span class="item-title">AI 新闻治理继续聚焦事实核查和内容溯源</span> <a class="item-link" href="https://reutersinstitute.politics.ox.ac.uk/calendar/ai-and-future-news-2026-0" target="_blank" rel="noopener">阅读来源 →</a></div><div class="item-compact"><span class="item-num">20</span><span class="tag tag-竞争">竞争</span><span class="item-title">Apple 与 OpenAI 的合作关系开始出现平台竞争张力</span> <a class="item-link" href="https://www.businessinsider.com/apple-siri-ai-chatgpt-openai-nilay-patel-interview-kafka-2026-6" target="_blank" rel="noopener">阅读来源 →</a></div></div></div><div class="tab-content " id="tab-tech"><div class="stats-bar"><div class="stat-item"><span class="stat-label">芯片/制造</span><span class="stat-value">4</span></div><div class="stat-item"><span class="stat-label">航天/卫星</span><span class="stat-value">3</span></div><div class="stat-item"><span class="stat-label">能源/市场</span><span class="stat-value">2</span></div><div class="stat-item"><span class="stat-label">终端/开发者</span><span class="stat-value">1</span></div></div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">01</span><div class="item-title-wrap"><span class="tag tag-芯片">芯片</span><span class="item-title">Musk 将在 ASML 员工活动上推介 Terafab，SpaceX IPO 前给芯片产能造势</span></div></div>
+<div class="item-summary">Reuters 6 月 11 日报道，Elon Musk 将在 ASML 活动上讨论 Terafab，这是一项面向 Tesla、SpaceX 和相关体系的超大芯片制造计划。ASML 是先进光刻设备核心供应商，因此这场沟通被视为 Terafab 产业链动员的一部分。</div>
+<a class="item-link" href="https://www.marketscreener.com/news/musk-to-speak-at-chip-tool-giant-asml-event-ahead-of-spacex-ipo-ce7f5cdbd088f721" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">Reuters / MarketScreener</span><span class="heat">热度 极高</span></div>
+<div class="insight"><b>格局：</b>算力需求正在倒逼头部科技公司向上游制造延伸。<b>影响：</b>AI、机器人、卫星和汽车项目将把先进制程设备变成战略资源，而不只是供应链采购。</div>
+</div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">02</span><div class="item-title-wrap"><span class="tag tag-半导体">半导体</span><span class="item-title">Terafab 被描述为 Tesla 与 SpaceX 的共同芯片工厂计划</span></div></div>
+<div class="item-summary">Investor's Business Daily 报道，Musk 准备向 ASML 说明 Terafab，目标是建设超大规模芯片工厂，并可能引入 Intel 作为制造伙伴，服务自动驾驶、机器人、卫星与太空计算需求。</div>
+<a class="item-link" href="https://www.investors.com/news/spacex-tesla-elon-musk-asml-semiconductor-terafab-ai-chips/" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">Investor's Business Daily</span><span class="heat">热度 高</span></div>
+<div class="insight"><b>趋势：</b>科技巨头开始把芯片供应从外部约束变成内部战略工程。<b>影响：</b>传统代工厂、设备商和大客户之间的边界会更模糊。</div>
+</div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">03</span><div class="item-title-wrap"><span class="tag tag-航天">航天</span><span class="item-title">SpaceX Gigasat 工厂指向太空数据中心和高通量卫星制造</span></div></div>
+<div class="item-summary">Tom's Hardware 报道，SpaceX 公布位于德州 Bastrop 的 Gigasat 工厂计划，目标是生产用于轨道数据中心的卫星，并在 2027 年后快速提升太空计算能力。</div>
+<a class="item-link" href="https://www.tomshardware.com/tech-industry/big-tech/spacex-unveils-11-million-square-foot-gigasat-factory-a-new-manufacturing-facility-for-space-based-data-centers-aims-for-1-gw-year-of-space-ai-compute-by-late-2027-from-its-satellites" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">Tom's Hardware</span><span class="heat">热度 高</span></div>
+<div class="insight"><b>格局：</b>数据中心不再只是地面电力和土地问题，轨道基础设施开始进入产业想象。<b>影响：</b>火箭、卫星、太阳能、散热和芯片制造被捆成一个新型基础设施赛道。</div>
+</div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">04</span><div class="item-title-wrap"><span class="tag tag-设备">设备</span><span class="item-title">ASML 与 Musk 的接触凸显 High-NA EUV 的战略地位</span></div></div>
+<div class="item-summary">MarketScreener 援引 Reuters 称，ASML CEO Christophe Fouquet 早前已与 Musk 就 Terafab 项目有过接触，并提到高数值孔径 EUV 设备与先进芯片制造的关键作用。</div>
+<a class="item-link" href="https://www.marketscreener.com/news/asml-ceo-had-contact-with-musk-about-terafab-project-reuters-says-ce7f5ad9da8df620" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">Reuters / MarketScreener</span><span class="heat">热度 高</span></div>
+<div class="insight"><b>趋势：</b>先进制程扩产不只取决于资本，还取决于设备可得性和良率爬坡。<b>影响：</b>ASML 的设备排期和客户优先级会继续成为半导体周期核心变量。</div>
+</div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">05</span><div class="item-title-wrap"><span class="tag tag-能源">能源</span><span class="item-title">中东风险继续影响欧洲市场和能源预期</span></div></div>
+<div class="item-summary">Reuters 市场报道显示，欧洲股市在中东局势影响下保持谨慎，油价和能源供应风险仍是交易员关注重点。工业和科技制造企业的成本预期也会被能源波动牵动。</div>
+<a class="item-link" href="https://za.investing.com/news/economy-news/european-shares-steady-middle-east-tensions-in-focus-4319242" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">Reuters / Investing.com</span><span class="heat">热度 高</span></div>
+<div class="insight"><b>格局：</b>地缘冲突通过能源价格传导到制造业利润。<b>影响：</b>芯片、数据中心、化工和物流等高能耗环节会继续被风险溢价压制。</div>
+</div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">06</span><div class="item-title-wrap"><span class="tag tag-终端">终端</span><span class="item-title">Apple WWDC 继续推动系统级软件和终端能力升级</span></div></div>
+<div class="item-summary">Apple 本周围绕新 Siri、系统软件和开发者生态发布多项更新。即便 AI 是主线，底层仍是 OS、SDK、隐私架构和终端能力的协调升级。</div>
+<a class="item-link" href="https://apnews.com/article/aa25d07c06d366ec5b62643a1f5b0db9" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">AP</span><span class="heat">热度 中高</span></div>
+<div class="insight"><b>趋势：</b>终端生态的竞争不只看硬件参数，还看操作系统是否能承接 AI 工作流。<b>影响：</b>开发者需要重新适配权限、上下文调用和系统入口变化。</div>
+</div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">07</span><div class="item-title-wrap"><span class="tag tag-航天">航天</span><span class="item-title">SpaceX IPO 前夕，航天制造与资本市场叙事合流</span></div></div>
+<div class="item-summary">Musk 在 ASML 活动上的 Terafab 叙事与 SpaceX IPO 节点接近，使芯片、卫星、火箭和太空数据中心被投资者放进同一个长期故事里。</div>
+<a class="item-link" href="https://www.marketscreener.com/news/musk-to-speak-at-chip-tool-giant-asml-event-ahead-of-spacex-ipo-ce7f5cdbd088f721" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">Reuters / MarketScreener</span><span class="heat">热度 高</span></div>
+<div class="insight"><b>格局：</b>商业航天正在从发射服务公司变成复合基础设施公司。<b>影响：</b>估值逻辑会从订单和火箭复用，扩展到卫星制造、通信、计算和国防网络。</div>
+</div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">08</span><div class="item-title-wrap"><span class="tag tag-制造">制造</span><span class="item-title">半导体设备供应链被重新拉入科技巨头竞争中心</span></div></div>
+<div class="item-summary">Musk 与 ASML 的沟通说明，先进制造不再只是芯片公司的事。汽车、航天、机器人和 AI 硬件公司都在尝试更直接地影响设备与产能。</div>
+<a class="item-link" href="https://www.investors.com/news/spacex-tesla-elon-musk-asml-semiconductor-terafab-ai-chips/" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">Investor's Business Daily</span><span class="heat">热度 中高</span></div>
+<div class="insight"><b>趋势：</b>大客户正在前移到设备和工厂规划阶段。<b>影响：</b>供应链金融、设备锁定和长期采购协议会变得更重要。</div>
+</div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">09</span><div class="item-title-wrap"><span class="tag tag-开发者">开发者</span><span class="item-title">Apple 新 AI 功能将推动开发者重新设计应用交互</span></div></div>
+<div class="item-summary">Apple 新 Siri 能理解屏幕、图片和跨应用上下文，这会促使应用开发者考虑如何把内容暴露给系统级 AI，同时保持隐私和权限控制。</div>
+<a class="item-link" href="https://apnews.com/article/aa25d07c06d366ec5b62643a1f5b0db9" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">AP</span><span class="heat">热度 中高</span></div>
+<div class="insight"><b>观察：</b>AI 入口越靠近系统，应用越需要变成可被代理调用的服务。<b>影响：</b>API、意图框架和权限声明会成为产品体验的一部分。</div>
+</div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">10</span><div class="item-title-wrap"><span class="tag tag-市场">市场</span><span class="item-title">ASML、Tesla 与 SpaceX 相关交易受到 Terafab 叙事牵动</span></div></div>
+<div class="item-summary">Investor's Business Daily 报道，Musk 计划向 ASML 推介 Terafab 的消息推动相关股票波动，显示市场正在把先进设备、芯片产能和航天 IPO 放在同一预期框架里。</div>
+<a class="item-link" href="https://www.investors.com/news/spacex-tesla-elon-musk-asml-semiconductor-terafab-ai-chips/" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">Investor's Business Daily</span><span class="heat">热度 中</span></div>
+<div class="insight"><b>趋势：</b>硬科技项目会越来越早被资本市场折现。<b>影响：</b>任何设备供应、代工伙伴或产能时间表变化，都可能迅速反映到估值上。</div>
+</div><div class="toggle-bar" onclick="toggleSection(this)">展开 TOP11-20 科技要闻 速览</div><div class="collapsible-content"><div class="item-compact"><span class="item-num">11</span><span class="tag tag-芯片">芯片</span><span class="item-title">Intel 被视为 Terafab 可能的早期制造伙伴</span> <a class="item-link" href="https://www.investors.com/news/spacex-tesla-elon-musk-asml-semiconductor-terafab-ai-chips/" target="_blank" rel="noopener">阅读来源 →</a></div><div class="item-compact"><span class="item-num">12</span><span class="tag tag-设备">设备</span><span class="item-title">Applied Materials、Tokyo Electron、Lam Research 等供应商或受益</span> <a class="item-link" href="https://www.investors.com/news/spacex-tesla-elon-musk-asml-semiconductor-terafab-ai-chips/" target="_blank" rel="noopener">阅读来源 →</a></div><div class="item-compact"><span class="item-num">13</span><span class="tag tag-航天">航天</span><span class="item-title">Gigasat 工厂强调卫星制造的垂直整合</span> <a class="item-link" href="https://www.tomshardware.com/tech-industry/big-tech/spacex-unveils-11-million-square-foot-gigasat-factory-a-new-manufacturing-facility-for-space-based-data-centers-aims-for-1-gw-year-of-space-ai-compute-by-late-2027-from-its-satellites" target="_blank" rel="noopener">阅读来源 →</a></div><div class="item-compact"><span class="item-num">14</span><span class="tag tag-能源">能源</span><span class="item-title">轨道数据中心概念试图绕开地面电力瓶颈</span> <a class="item-link" href="https://www.tomshardware.com/tech-industry/big-tech/spacex-unveils-11-million-square-foot-gigasat-factory-a-new-manufacturing-facility-for-space-based-data-centers-aims-for-1-gw-year-of-space-ai-compute-by-late-2027-from-its-satellites" target="_blank" rel="noopener">阅读来源 →</a></div><div class="item-compact"><span class="item-num">15</span><span class="tag tag-市场">市场</span><span class="item-title">ASML 股价受 Terafab 关注提振</span> <a class="item-link" href="https://www.investors.com/news/spacex-tesla-elon-musk-asml-semiconductor-terafab-ai-chips/" target="_blank" rel="noopener">阅读来源 →</a></div><div class="item-compact"><span class="item-num">16</span><span class="tag tag-软件">软件</span><span class="item-title">Apple 新系统周期将带来开发者适配窗口</span> <a class="item-link" href="https://apnews.com/article/aa25d07c06d366ec5b62643a1f5b0db9" target="_blank" rel="noopener">阅读来源 →</a></div><div class="item-compact"><span class="item-num">17</span><span class="tag tag-隐私">隐私</span><span class="item-title">Private Cloud Compute 继续作为 Apple 技术卖点</span> <a class="item-link" href="https://apnews.com/article/aa25d07c06d366ec5b62643a1f5b0db9" target="_blank" rel="noopener">阅读来源 →</a></div><div class="item-compact"><span class="item-num">18</span><span class="tag tag-宏观">宏观</span><span class="item-title">油价风险继续影响欧洲制造成本</span> <a class="item-link" href="https://za.investing.com/news/economy-news/european-shares-steady-middle-east-tensions-in-focus-4319242" target="_blank" rel="noopener">阅读来源 →</a></div><div class="item-compact"><span class="item-num">19</span><span class="tag tag-制造">制造</span><span class="item-title">High-NA EUV 设备排期成为先进工厂约束</span> <a class="item-link" href="https://www.marketscreener.com/news/asml-ceo-had-contact-with-musk-about-terafab-project-reuters-says-ce7f5ad9da8df620" target="_blank" rel="noopener">阅读来源 →</a></div><div class="item-compact"><span class="item-num">20</span><span class="tag tag-资本">资本</span><span class="item-title">SpaceX IPO 前的产业叙事继续升温</span> <a class="item-link" href="https://www.marketscreener.com/news/musk-to-speak-at-chip-tool-giant-asml-event-ahead-of-spacex-ipo-ce7f5cdbd088f721" target="_blank" rel="noopener">阅读来源 →</a></div></div></div><div class="tab-content " id="tab-global"><div class="stats-bar"><div class="stat-item"><span class="stat-label">中东/能源</span><span class="stat-value">5</span></div><div class="stat-item"><span class="stat-label">俄乌/欧洲</span><span class="stat-value">3</span></div><div class="stat-item"><span class="stat-label">外交/安全</span><span class="stat-value">1</span></div><div class="stat-item"><span class="stat-label">市场/通胀</span><span class="stat-value">1</span></div></div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">01</span><div class="item-title-wrap"><span class="tag tag-中东">中东</span><span class="item-title">美伊连续第二天交火，AP 称地区局势再度急剧升级</span></div></div>
+<div class="item-summary">AP 6 月 11 日报道，美国和伊朗连续第二天交火。美国空袭伊朗军事监视、通信和防空设施，伊朗则向巴林和科威特发射导弹；巴林是美国海军第五舰队总部所在地。</div>
+<a class="item-link" href="https://apnews.com/article/2656530d342f730821fc63e67a342891" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">AP</span><span class="heat">热度 极高</span></div>
+<div class="insight"><b>格局：</b>冲突已经从双边军事交换扩散到海湾盟友领土。<b>影响：</b>美国基地安全、霍尔木兹航运和全球能源价格都会进入更高风险区间。</div>
+</div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">02</span><div class="item-title-wrap"><span class="tag tag-能源">能源</span><span class="item-title">特朗普威胁打击伊朗并提及 Kharg Island，油气基础设施成为焦点</span></div></div>
+<div class="item-summary">AP 报道，特朗普威胁对伊朗发动重大打击，并提到可能控制伊朗关键油气资产。Kharg Island 对伊朗石油出口具有战略意义，一旦被卷入冲突，能源市场风险将显著上升。</div>
+<a class="item-link" href="https://apnews.com/article/3c2c6d356a1e25b4d7edf66b2edba57d" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">AP</span><span class="heat">热度 极高</span></div>
+<div class="insight"><b>趋势：</b>军事压力正在直接触及能源出口命门。<b>影响：</b>油价、航运保险、通胀预期和新兴市场汇率都可能被重新定价。</div>
+</div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">03</span><div class="item-title-wrap"><span class="tag tag-外交">外交</span><span class="item-title">特朗普随后称取消新一轮对伊军事打击，谈判窗口仍未关闭</span></div></div>
+<div class="item-summary">AP 最新动态称，特朗普表示取消原定新一轮对伊军事打击，理由是相关讨论已推进到伊朗最高层级并获得地区支持。局势仍高度不稳定，但外交窗口没有完全关闭。</div>
+<a class="item-link" href="https://apnews.com/article/48bf108403bcb47d96b4e25b53e37d47" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">AP</span><span class="heat">热度 极高</span></div>
+<div class="insight"><b>格局：</b>华盛顿策略仍在军事威慑和谈判施压之间摇摆。<b>影响：</b>市场会对任何“取消打击”或“恢复打击”的信号高度敏感。</div>
+</div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">04</span><div class="item-title-wrap"><span class="tag tag-航运">航运</span><span class="item-title">霍尔木兹海峡风险重新抬头，海湾能源通道成为全球焦点</span></div></div>
+<div class="item-summary">AP 和多家媒体报道显示，伊朗围绕霍尔木兹海峡和区域基地的军事动作引发国际关注。该海峡是全球能源运输关键通道，任何封锁或误击都会迅速传导到油价。</div>
+<a class="item-link" href="https://apnews.com/article/us-iran-war-hormuz-11-june-2026-2656530d342f730821fc63e67a342891" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">AP</span><span class="heat">热度 高</span></div>
+<div class="insight"><b>趋势：</b>中东冲突的核心变量从战场转向能源通道控制。<b>影响：</b>亚洲和欧洲能源进口国会更快调整库存、航线和外交立场。</div>
+</div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">05</span><div class="item-title-wrap"><span class="tag tag-市场">市场</span><span class="item-title">欧洲市场持稳但继续盯紧中东风险和油价</span></div></div>
+<div class="item-summary">Reuters 市场报道显示，欧洲股市表现谨慎，中东局势和能源价格仍是投资者关注重点。地缘冲突正在通过油价、通胀和利率预期传导到金融市场。</div>
+<a class="item-link" href="https://za.investing.com/news/economy-news/european-shares-steady-middle-east-tensions-in-focus-4319242" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">Reuters / Investing.com</span><span class="heat">热度 高</span></div>
+<div class="insight"><b>格局：</b>中东风险不是局部新闻，而是全球资产定价变量。<b>影响：</b>能源、航空、化工和消费板块会继续受波动影响。</div>
+</div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">06</span><div class="item-title-wrap"><span class="tag tag-俄乌">俄乌</span><span class="item-title">Zelenskiy 称与 Witkoff 和 Kushner 通话积极，推动停火外交</span></div></div>
+<div class="item-summary">Reuters 报道，乌克兰总统 Zelenskiy 表示与美国方面的 Witkoff 和 Kushner 进行了积极通话，三方支持推动 Zelenskiy 与 Putin 会面以争取停火，欧洲也将发挥作用。</div>
+<a class="item-link" href="https://www.internazionale.it/ultime-notizie-reuters/2026/06/08/ukraine-s-zelenskiy-says-he-had-positive-conversation-with-witkoff-and-kushner" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">Reuters / Internazionale</span><span class="heat">热度 高</span></div>
+<div class="insight"><b>趋势：</b>俄乌外交仍在寻找高层会面窗口。<b>影响：</b>如果中东冲突继续吸走美国注意力，乌克兰谈判节奏和援助安排都会受牵连。</div>
+</div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">07</span><div class="item-title-wrap"><span class="tag tag-俄罗斯">俄罗斯</span><span class="item-title">克宫称暂无 Putin-Trump 通话计划，也未确定美国特使访俄日期</span></div></div>
+<div class="item-summary">MarketScreener 援引 Reuters 报道，克宫称没有 Putin 与 Trump 通话计划，也没有美国特使访俄日期。俄方同时表示，目前不接受欧洲作为调停方。</div>
+<a class="item-link" href="https://www.marketscreener.com/news/kremlin-says-no-plans-for-putin-trump-call-no-dates-for-u-s-envoys-russia-visit-ce7f5dd3d180f52c" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">Reuters / MarketScreener</span><span class="heat">热度 中高</span></div>
+<div class="insight"><b>格局：</b>乌克兰和平谈判仍卡在参与方和调停框架上。<b>影响：</b>即便美乌沟通积极，俄方是否接受会面和欧洲角色仍是关键障碍。</div>
+</div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">08</span><div class="item-title-wrap"><span class="tag tag-乌克兰">乌克兰</span><span class="item-title">乌克兰防空压力仍高，Zelenskyy 继续寻求美国援助</span></div></div>
+<div class="item-summary">AP 近期报道显示，乌克兰持续要求更多美国防空弹药，以应对俄罗斯弹道导弹和无人机攻击。俄乌战场的消耗重点仍在防空、远程打击和城市保护。</div>
+<a class="item-link" href="https://apnews.com/article/russia-ukraine-war-banks-air-defense-drones-059287f382482fdd3dc4b3ddd3c6ceb6" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">AP</span><span class="heat">热度 高</span></div>
+<div class="insight"><b>趋势：</b>战争进入长期消耗阶段，防空弹药比单次外交声明更能决定民用基础设施安全。<b>影响：</b>美国援助节奏和欧洲补位能力将继续影响基辅谈判筹码。</div>
+</div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">09</span><div class="item-title-wrap"><span class="tag tag-欧洲">欧洲</span><span class="item-title">欧盟与 Apple 围绕 AI 延迟互相指责，科技监管继续外溢到贸易议题</span></div></div>
+<div class="item-summary">AP 报道，Apple 与欧盟围绕 Siri AI 在欧洲推迟上线互相指责。虽然这是科技事件，但它反映出欧洲平台监管、隐私规则和跨境数字服务正在成为新的贸易摩擦点。</div>
+<a class="item-link" href="https://apnews.com/article/siri-ai-europe-apple-5d18df90b03e4e98ac528c8802e2b531" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">AP</span><span class="heat">热度 中高</span></div>
+<div class="insight"><b>格局：</b>数字监管已成为欧美关系的重要组成部分。<b>影响：</b>未来大型科技功能发布会更频繁地出现地区差异和监管谈判。</div>
+</div>
+<div class="news-item">
+<div class="item-header"><span class="item-number">10</span><div class="item-title-wrap"><span class="tag tag-通胀">通胀</span><span class="item-title">中东能源风险与美国通胀担忧再度绑定</span></div></div>
+<div class="item-summary">Guardian 今日简报提到，中东冲突推升通胀担忧，能源价格波动再次成为美国和全球经济压力源。冲突若延长，将影响家庭能源、运输和商品价格。</div>
+<a class="item-link" href="https://www.theguardian.com/us-news/2026/jun/11/first-thing-us-iran-trade-strikes-trump-threatens-tehran-stalled-talks" target="_blank" rel="noopener">阅读来源 →</a>
+<div class="item-meta"><span class="source">The Guardian</span><span class="heat">热度 中高</span></div>
+<div class="insight"><b>趋势：</b>地缘冲突通过能源和保险成本传导到生活成本。<b>影响：</b>央行、财政政策和选民情绪都会被油价路径牵动。</div>
+</div><div class="toggle-bar" onclick="toggleSection(this)">展开 TOP11-20 全球要闻 速览</div><div class="collapsible-content"><div class="item-compact"><span class="item-num">11</span><span class="tag tag-海湾">海湾</span><span class="item-title">伊朗对巴林和科威特的打击让美国海湾基地安全成为焦点</span> <a class="item-link" href="https://apnews.com/article/2656530d342f730821fc63e67a342891" target="_blank" rel="noopener">阅读来源 →</a></div><div class="item-compact"><span class="item-num">12</span><span class="tag tag-油气">油气</span><span class="item-title">Kharg Island 因掌握伊朗出口命脉而成为潜在高风险目标</span> <a class="item-link" href="https://apnews.com/article/3c2c6d356a1e25b4d7edf66b2edba57d" target="_blank" rel="noopener">阅读来源 →</a></div><div class="item-compact"><span class="item-num">13</span><span class="tag tag-外交">外交</span><span class="item-title">特朗普取消打击说明威慑和谈判仍在快速切换</span> <a class="item-link" href="https://apnews.com/article/48bf108403bcb47d96b4e25b53e37d47" target="_blank" rel="noopener">阅读来源 →</a></div><div class="item-compact"><span class="item-num">14</span><span class="tag tag-航运">航运</span><span class="item-title">霍尔木兹风险推高航运保险和能源通道焦虑</span> <a class="item-link" href="https://apnews.com/article/us-iran-war-hormuz-11-june-2026-2656530d342f730821fc63e67a342891" target="_blank" rel="noopener">阅读来源 →</a></div><div class="item-compact"><span class="item-num">15</span><span class="tag tag-乌克兰">乌克兰</span><span class="item-title">美方特使沟通积极但俄方暂未给出会谈安排</span> <a class="item-link" href="https://www.marketscreener.com/news/kremlin-says-no-plans-for-putin-trump-call-no-dates-for-u-s-envoys-russia-visit-ce7f5dd3d180f52c" target="_blank" rel="noopener">阅读来源 →</a></div><div class="item-compact"><span class="item-num">16</span><span class="tag tag-俄罗斯">俄罗斯</span><span class="item-title">克宫拒绝欧洲作为当前调停角色</span> <a class="item-link" href="https://www.marketscreener.com/news/kremlin-says-no-plans-for-putin-trump-call-no-dates-for-u-s-envoys-russia-visit-ce7f5dd3d180f52c" target="_blank" rel="noopener">阅读来源 →</a></div><div class="item-compact"><span class="item-num">17</span><span class="tag tag-防空">防空</span><span class="item-title">乌克兰继续要求更多美国防空弹药</span> <a class="item-link" href="https://apnews.com/article/russia-ukraine-war-banks-air-defense-drones-059287f382482fdd3dc4b3ddd3c6ceb6" target="_blank" rel="noopener">阅读来源 →</a></div><div class="item-compact"><span class="item-num">18</span><span class="tag tag-市场">市场</span><span class="item-title">欧洲股市对中东局势保持谨慎</span> <a class="item-link" href="https://za.investing.com/news/economy-news/european-shares-steady-middle-east-tensions-in-focus-4319242" target="_blank" rel="noopener">阅读来源 →</a></div><div class="item-compact"><span class="item-num">19</span><span class="tag tag-监管">监管</span><span class="item-title">欧盟平台规则继续影响美国科技公司功能上线</span> <a class="item-link" href="https://apnews.com/article/siri-ai-europe-apple-5d18df90b03e4e98ac528c8802e2b531" target="_blank" rel="noopener">阅读来源 →</a></div><div class="item-compact"><span class="item-num">20</span><span class="tag tag-通胀">通胀</span><span class="item-title">能源冲击可能重新推高美国通胀政治压力</span> <a class="item-link" href="https://www.theguardian.com/us-news/2026/jun/11/first-thing-us-iran-trade-strikes-trump-threatens-tehran-stalled-talks" target="_blank" rel="noopener">阅读来源 →</a></div></div></div><!-- AUTO-UPDATE:END --></div>
+<div class="footer">Michael的每日新闻 · GitHub Pages · BUILD_VERSION 20260611-corrected-1915</div></div></div>
+<script>const BUILD_VERSION="20260611-corrected-1915";function toggleSection(el){const c=el.nextElementSibling;c.classList.toggle('open');el.textContent=c.classList.contains('open')?el.textContent.replace('展开','收起'):el.textContent.replace('收起','展开');}document.querySelectorAll('.tab').forEach(tab=>tab.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));document.querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active'));tab.classList.add('active');document.getElementById('tab-'+tab.dataset.tab).classList.add('active');}));</script>
+</body></html>
