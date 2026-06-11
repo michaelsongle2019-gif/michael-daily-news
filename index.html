@@ -1,1 +1,312 @@
-<h1>Michael的每日新闻测试页</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="daily-briefing-version" content="20260611-1806">
+  <title>Michael Daily News | 2026-06-11 Afternoon Edition</title>
+  <style>
+    :root {
+      --bg: #eef3f7;
+      --card: #f8fbfd;
+      --line: #c8d6e4;
+      --ink: #15273a;
+      --muted: #5e748a;
+      --accent: #2e78b7;
+      --soft: #e5eef6;
+      --insight: #eaf3fb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+      background: linear-gradient(180deg, #dfe9f1 0%, #eef3f7 100%);
+      color: var(--ink);
+    }
+    .shell {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 28px 16px 48px;
+    }
+    .hero {
+      background: linear-gradient(135deg, #163554 0%, #204d77 100%);
+      color: #fff;
+      border: 1px solid #355b80;
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 18px 40px rgba(21, 39, 58, 0.12);
+    }
+    .hero-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .hero h1 {
+      margin: 0;
+      font-size: 34px;
+      letter-spacing: 1px;
+    }
+    .hero p {
+      margin: 8px 0 0 0;
+      color: #b7d0e5;
+      line-height: 1.8;
+      max-width: 760px;
+    }
+    .build {
+      text-align: right;
+      font-size: 13px;
+      line-height: 1.8;
+      color: #b7d0e5;
+    }
+    .layout {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 20px;
+    }
+    .section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px;
+      box-shadow: 0 10px 28px rgba(21, 39, 58, 0.08);
+    }
+    .section-header h2 {
+      margin: 0;
+      font-size: 22px;
+      color: #123a5d;
+    }
+    .section-header p {
+      margin: 8px 0 0 0;
+      font-size: 13px;
+      line-height: 1.8;
+      color: var(--muted);
+    }
+    .news-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 16px;
+    }
+    .news-item {
+      border-top: 1px solid #e3ebf2;
+      padding-top: 14px;
+    }
+    .news-item:first-child {
+      border-top: none;
+      padding-top: 0;
+    }
+    .item-top {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .item-number {
+      font-size: 17px;
+      font-weight: 900;
+      color: var(--accent);
+    }
+    .item-tag {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: var(--soft);
+      color: #4d5c70;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .news-item h3 {
+      margin: 0 0 8px 0;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    .summary, .meta {
+      margin: 0 0 8px 0;
+      font-size: 13px;
+      line-height: 1.85;
+      color: var(--muted);
+    }
+    .meta {
+      font-weight: 700;
+      color: #7f93a7;
+    }
+    .source-link {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .insight {
+      margin-top: 10px;
+      border-left: 4px solid var(--accent);
+      background: var(--insight);
+      padding: 10px 12px;
+      font-size: 13px;
+      line-height: 1.8;
+      color: #36526d;
+    }
+    .footer {
+      margin-top: 18px;
+      text-align: center;
+      color: #6b8095;
+      font-size: 12px;
+    }
+    @media (max-width: 980px) {
+      .layout { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 28px; }
+      .build { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <section class="hero">
+      <div class="hero-top">
+        <div>
+          <h1>Michael Daily News</h1>
+          <p>Afternoon edition covering AI, non-AI technology, and major global developments. Website and email share the same verified source set for this run.</p>
+        </div>
+        <div class="build">
+          <div>2026.6.11 | Thursday | South Africa time 18:06</div>
+          <div>BUILD_VERSION: 20260611-1806</div>
+        </div>
+      </div>
+    </section>
+    <main class="layout">
+      
+      <section class="section" id="section-ai">
+        <div class="section-header">
+          <h2>AI News</h2>
+          <p>This afternoon's AI update is led by deployment, platform control, and regulation risk rather than pure model benchmarks.</p>
+        </div>
+        <div class="news-list">
+          
+            <article class="news-item">
+              <div class="item-top">
+                <span class="item-number">01</span>
+                <span class="item-tag">Deployment</span>
+              </div>
+              <h3>Anthropic launches $150 million Claude Corps program for nonprofits</h3>
+              <p class="summary">The Associated Press reported on June 11 that Anthropic will fund and place 1,000 fellows into more than 400 nonprofits, pairing grants and Claude credits with hands-on adoption support.</p>
+              <p class="meta">AP | 2026-06-11</p>
+              <a class="source-link" href="https://apnews.com/article/b1c130a08417d13e1256f8982d233b0e" target="_blank" rel="noopener">Source link</a>
+              <div class="insight">The important signal is that frontier AI firms are now spending real capital to accelerate real-world workflow adoption. That shifts the market from model demos toward distribution, services, and measured impact.</div>
+            </article>
+            <article class="news-item">
+              <div class="item-top">
+                <span class="item-number">02</span>
+                <span class="item-tag">Regulation</span>
+              </div>
+              <h3>Apple and Brussels clash over the EU rollout delay for Siri AI</h3>
+              <p class="summary">AP reported on June 9 that Apple blamed the EU Digital Markets Act for delaying Siri AI in Europe, while the European Commission said the choice not to launch was Apple's alone.</p>
+              <p class="meta">AP | 2026-06-09</p>
+              <a class="source-link" href="https://apnews.com/article/5d18df90b03e4e98ac528c8802e2b531" target="_blank" rel="noopener">Source link</a>
+              <div class="insight">AI assistants are now running into platform-access regulation. The next competitive moat is not only model quality, but whether a company can ship the assistant across regulated device ecosystems on time.</div>
+            </article>
+            <article class="news-item">
+              <div class="item-top">
+                <span class="item-number">03</span>
+                <span class="item-tag">Platform</span>
+              </div>
+              <h3>Apple uses WWDC 2026 to reposition Siri AI as a system-level assistant</h3>
+              <p class="summary">AP reported on June 5 that Apple upgraded Siri AI with cross-app actions, visual intelligence, and private-cloud processing in an effort to close the gap with rival AI platforms.</p>
+              <p class="meta">AP | 2026-06-05</p>
+              <a class="source-link" href="https://apnews.com/article/aa25d07c06d366ec5b62643a1f5b0db9" target="_blank" rel="noopener">Source link</a>
+              <div class="insight">This matters because default device entry points still decide mainstream usage. If Apple can make AI useful inside the operating system rather than in a standalone chat app, retention economics improve sharply.</div>
+            </article>
+        </div>
+      </section>
+      <section class="section" id="section-tech">
+        <div class="section-header">
+          <h2>Non-AI Tech</h2>
+          <p>Outside AI, the strongest signals remain in space infrastructure, semiconductor supply-chain optionality, and European aerospace realignment.</p>
+        </div>
+        <div class="news-list">
+          
+            <article class="news-item">
+              <div class="item-top">
+                <span class="item-number">01</span>
+                <span class="item-tag">Space</span>
+              </div>
+              <h3>NASA names the Artemis III crew for the 2027 orbital test mission</h3>
+              <p class="summary">AP reported on June 9 that NASA unveiled the Artemis III crew for a mission now centered on Earth-orbit docking tests with lunar landers, a key step toward later moon-surface operations.</p>
+              <p class="meta">AP | 2026-06-09</p>
+              <a class="source-link" href="https://apnews.com/article/7c09de3e1fd5b1f7fbfc9e9d702d71a5" target="_blank" rel="noopener">Source link</a>
+              <div class="insight">The bottleneck is no longer launch rhetoric. It is multi-system integration across Orion, landers, suits, and docking workflows, which is where schedule credibility for the moon program will be judged.</div>
+            </article>
+            <article class="news-item">
+              <div class="item-top">
+                <span class="item-number">02</span>
+                <span class="item-tag">Chips</span>
+              </div>
+              <h3>Google and Nvidia are reported to be weighing Intel as an advanced chip supplier</h3>
+              <p class="summary">MarketWatch, citing The Information on June 9, reported that Google and Nvidia are considering Intel for more high-end manufacturing and packaging work, boosting confidence in Intel Foundry.</p>
+              <p class="meta">MarketWatch / The Information | 2026-06-09</p>
+              <a class="source-link" href="https://www.marketwatch.com/story/intels-stock-soars-as-the-companys-blue-chip-roster-of-customers-looks-to-be-growing-264cd9d2" target="_blank" rel="noopener">Source link</a>
+              <div class="insight">Even tentative customer diversification away from a single foundry matters. It suggests large buyers are paying for second-source resilience, not only lowest-cost wafers.</div>
+            </article>
+            <article class="news-item">
+              <div class="item-top">
+                <span class="item-number">03</span>
+                <span class="item-tag">Aerospace</span>
+              </div>
+              <h3>Germany signals it wants to lead a new next-generation fighter effort after FCAS</h3>
+              <p class="summary">The Financial Times reported on June 10 that Berlin will seek a leading role in any future sixth-generation fighter project after stepping back from the FCAS path with France.</p>
+              <p class="meta">Financial Times | 2026-06-10</p>
+              <a class="source-link" href="https://www.ft.com/content/9d565c4a-e5e1-4907-a3c7-1eb202046479" target="_blank" rel="noopener">Source link</a>
+              <div class="insight">This is bigger than one defense contract. It shows Europe is still struggling to align industrial control with strategic autonomy in complex aerospace programs.</div>
+            </article>
+        </div>
+      </section>
+      <section class="section" id="section-world">
+        <div class="section-header">
+          <h2>Global News</h2>
+          <p>The highest-risk global stories this afternoon remain Gulf escalation, U.S. immigration hardening, and European efforts to shore up Ukraine's air defenses.</p>
+        </div>
+        <div class="news-list">
+          
+            <article class="news-item">
+              <div class="item-top">
+                <span class="item-number">01</span>
+                <span class="item-tag">Middle East</span>
+              </div>
+              <h3>The U.S. and Iran exchange fire again as Gulf tensions worsen</h3>
+              <p class="summary">AP's June 11 live coverage said the U.S. struck targets in Iran again while Tehran retaliated against Gulf states, raising the risk of further energy and shipping disruption.</p>
+              <p class="meta">AP | 2026-06-11</p>
+              <a class="source-link" href="https://apnews.com/article/2656530d342f730821fc63e67a342891" target="_blank" rel="noopener">Source link</a>
+              <div class="insight">The market issue is not only oil price direction. It is the probability that shipping, airspace, and insurance costs remain structurally elevated as long as escalation cycles continue.</div>
+            </article>
+            <article class="news-item">
+              <div class="item-top">
+                <span class="item-number">02</span>
+                <span class="item-tag">United States</span>
+              </div>
+              <h3>Trump signs a nearly $70 billion immigration enforcement bill</h3>
+              <p class="summary">AP reported on June 11 that President Donald Trump signed legislation funding immigration enforcement through the end of his term, including major increases for ICE and Border Patrol.</p>
+              <p class="meta">AP | 2026-06-11</p>
+              <a class="source-link" href="https://apnews.com/article/9eef2e24fede3e4d593be462cbcf31f2" target="_blank" rel="noopener">Source link</a>
+              <div class="insight">This materially expands federal enforcement capacity, which matters for employers, universities, cross-border mobility planning, and political risk heading into the midterms.</div>
+            </article>
+            <article class="news-item">
+              <div class="item-top">
+                <span class="item-number">03</span>
+                <span class="item-tag">Ukraine</span>
+              </div>
+              <h3>European leaders press for faster air-defense production for Ukraine</h3>
+              <p class="summary">AP reported on June 7 that leaders from the U.K., France, Germany, and Ukraine called for urgent interceptor and anti-ballistic missile production to counter Russia's intensified attacks.</p>
+              <p class="meta">AP | 2026-06-07</p>
+              <a class="source-link" href="https://apnews.com/article/ce1713304c7578f039fcbdb8d655f6d7" target="_blank" rel="noopener">Source link</a>
+              <div class="insight">Ukraine's battlefield problem is increasingly an industrial tempo problem. The pace of interceptor production now directly affects the survivability of cities and critical infrastructure.</div>
+            </article>
+        </div>
+      </section>
+    </main>
+    <div class="footer">All items include source links | Afternoon edition build 20260611-1806</div>
+  </div>
+</body>
+</html>
